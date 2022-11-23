@@ -12,6 +12,14 @@
     border: none;
 }
 
+.form__button:hover {
+    background-color: rgb(1, 107, 107);
+}
+
+.form__button:active {
+    background-color: teal;
+}
+
 .form__newTask {
     padding: 5px;
     border: 2px solid #eee;
