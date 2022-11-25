@@ -1,17 +1,5 @@
 {
-  const buttonElement = document.querySelector(".js-button");
-  const taskListElement = document.querySelector(".js-taskList");
-
-  const tasks = [
-    {
-      content: "zjeść obiad",
-      done: false,
-    },
-    {
-      content: "umyć okna",
-      done: false,
-    },
-  ];
+  const tasks = [];
 
   const addNewTask = (newTaskElement) => {
     tasks.push({
