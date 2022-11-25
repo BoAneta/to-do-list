@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 10px;
-    margin: 20px;
     padding: 10px;
+    margin: 0 20px;
     border-bottom: 2px solid #eee;
 }
 
@@ -25,7 +25,31 @@
     color: white;
 }
 
+.taskList__button--remove:hover {
+    background-color: rgb(175, 25, 25);
+}
+
+.taskList__button--remove:active {
+    background-color: rgb(214, 12, 12);
+}
+
 .taskList__button--done {
-    text-decoration: line-through;
     color: #eee;
+}
+
+.taskList__button--done:hover {
+    background-color: rgb(5, 94, 5);
+}
+
+.taskList__button--done:active {
+    background-color: green;
+}
+
+.taskList__text {
+    display: flex;
+    align-items: center;
+}
+
+.task__content--done {
+    text-decoration: line-through;
 }
