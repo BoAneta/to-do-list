@@ -54,15 +54,16 @@
     for (const task of tasks) {
       htmlString += `
         <li 
-        class="js-taskList taskList__item"
-        ${task.done ? 'style="text-decoration: line-through"' : ""}>
+        class="js-taskList taskList__item">
         <button class="taskList__button taskList__button--done js-done">
         ${task.done ? "✓" : ""}</button>
-        ${task.content}
+        <span class="taskList__text task__content${
+          task.done ? " task__content--done" : ""
+        }">${task.content}</span>
         <button class="taskList__button taskList__button--remove js-remove">🗑</button>
         </li>
         `;
-    };
+    }
 
     document.querySelector(".js-taskList").innerHTML = htmlString;
 
@@ -73,10 +74,13 @@
     event.preventDefault();
 
     const newTaskElement = document.querySelector(".js-newTask").value.trim();
-    if (newTaskElement === "") {
-      return;
+    const newTaskContent = document.querySelector(".js-newTask");
+
+    if (newTaskElement !== "") {
+      addNewTask(newTaskElement);
+      newTaskContent.value = "";
     }
-    addNewTask(newTaskElement);
+    newTaskContent.focus();
   };
 
   const init = () => {
