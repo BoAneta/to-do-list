@@ -9,7 +9,7 @@
     },
     {
       content: "umyć okna",
-      done: true,
+      done: false,
     },
   ];
 
@@ -28,16 +28,6 @@
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
     render();
-  };
-
-  const onFormSubmit = (event) => {
-    event.preventDefault();
-
-    const newTaskElement = document.querySelector(".js-newTask").value.trim();
-    if (newTaskElement === "") {
-      return;
-    }
-    addNewTask(newTaskElement);
   };
 
   const bindEvents = () => {
@@ -64,10 +54,12 @@
     for (const task of tasks) {
       htmlString += `
         <li 
+        class="js-taskList taskList__item"
         ${task.done ? 'style="text-decoration: line-through"' : ""}>
-        <button class="js-done">✅</button>
+        <button class="taskList__button taskList__button--done js-done">
+        ${task.done ? "✓" : ""}</button>
         ${task.content}
-        <button class="js-remove">🗑️</button>
+        <button class="taskList__button taskList__button--remove js-remove">🗑</button>
         </li>
         `;
     };
@@ -75,6 +67,16 @@
     document.querySelector(".js-taskList").innerHTML = htmlString;
 
     bindEvents();
+  };
+
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    const newTaskElement = document.querySelector(".js-newTask").value.trim();
+    if (newTaskElement === "") {
+      return;
+    }
+    addNewTask(newTaskElement);
   };
 
   const init = () => {
