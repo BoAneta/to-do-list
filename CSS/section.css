@@ -2,9 +2,11 @@
     background-color: white;
     box-shadow: 0 0 5px #ccc;
     word-break: break-word;
+    padding: 0 0 1px 0;
 }
 
 .section__header {
     border-bottom: 3px solid #eee;
     padding: 15px;
+    margin-block-start: 10px;
 }
