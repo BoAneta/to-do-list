@@ -18,5 +18,6 @@ html {
 
 .container {
     flex-basis: 900px;
+    margin-top: 30px;
 }
 
