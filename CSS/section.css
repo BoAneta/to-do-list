@@ -6,7 +6,7 @@
 }
 
 .section__header {
-    border-bottom: 3px solid #eee;
-    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
     margin-block-start: 10px;
 }
