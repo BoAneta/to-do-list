@@ -21,3 +21,9 @@ html {
     margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+    .container {
+        margin: 20px;
+    }
+}
+
