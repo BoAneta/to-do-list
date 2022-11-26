@@ -18,7 +18,7 @@
     render();
   };
 
-  const bindEvents = () => {
+  const bindRemoveEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
     removeButtons.forEach((removeButton, index) => {
@@ -26,7 +26,9 @@
         removeTask(index);
       });
     });
+  };
 
+  const bindToggleEvents = () => {
     const toggleDoneButtons = document.querySelectorAll(".js-done");
 
     toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -55,7 +57,8 @@
 
     document.querySelector(".js-taskList").innerHTML = htmlString;
 
-    bindEvents();
+    bindRemoveEvents();
+    bindToggleEvents();
   };
 
   const onFormSubmit = (event) => {
