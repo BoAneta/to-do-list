@@ -45,7 +45,7 @@
         class="js-taskList taskList__item">
         <button class="taskList__button taskList__button--done js-done">
         ${task.done ? "✓" : ""}</button>
-        <span class="taskList__text task__content${
+        <span class="task__content${
           task.done ? " task__content--done" : ""
         }">${task.content}</span>
         <button class="taskList__button taskList__button--remove js-remove">🗑</button>
