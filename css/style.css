@@ -2,8 +2,8 @@ html {
     box-sizing: border-box;
 }
 
-*, 
-::after, 
+*,
+::after,
 ::before {
     box-sizing: inherit;
 }
@@ -13,7 +13,6 @@ html {
     background-color: #eee;
     display: flex;
     justify-content: center;
-    
 }
 
 .container {
@@ -26,4 +25,3 @@ html {
         margin: 20px;
     }
 }
-
