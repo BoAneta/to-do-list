@@ -4,7 +4,7 @@
   const addNewTask = (newTaskElement) => {
     tasks = [
       ...tasks,
-      {content: newTaskElement},
+      { content: newTaskElement },
     ];
     render();
   };
@@ -20,7 +20,10 @@
   const toggleTaskDone = (taskIndex) => {
     tasks = [
       ...tasks.slice(0, taskIndex),
-      {...tasks[taskIndex], done: !tasks[taskIndex].done},
+      {
+        ...tasks[taskIndex],
+        done: !tasks[taskIndex].done,
+      },
       ...tasks.slice(taskIndex + 1),
     ];
     render();
@@ -55,8 +58,7 @@
         class="js-taskList taskList__item">
         <button class="taskList__button taskList__button--done js-done">
         ${task.done ? "✓" : ""}</button>
-        <span class="task__content${
-          task.done ? " task__content--done" : ""
+        <span class="task__content${task.done ? " task__content--done" : ""
         }">${task.content}</span>
         <button class="taskList__button taskList__button--remove js-remove">🗑</button>
         </li>

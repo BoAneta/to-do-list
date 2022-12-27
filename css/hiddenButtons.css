@@ -1,0 +1,12 @@
+.hidden__buttons {
+border: none;
+display: flex;
+align-items: center;
+background-color: white;
+color: hsl(180, 100%, 25%);
+transition: 1s;
+}
+
+.hidden__buttons:hover {
+color: hsl(180, 100%, 35%);
+}
