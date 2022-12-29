@@ -91,7 +91,7 @@
     ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
     </button>
     <button class="tasks__buttons js-markAllTasksDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-    Zakończ wszystkie
+    Ukończ wszystkie
     </button>
     `;
   };
