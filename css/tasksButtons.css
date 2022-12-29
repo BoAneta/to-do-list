@@ -11,6 +11,14 @@
     transition: color 1s;
 }
 
+@media(max-width: 767px) {
+    .tasks__buttons {
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
 .tasks__buttons:hover {
     color: #03d3d3;
 }

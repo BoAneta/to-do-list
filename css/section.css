@@ -11,6 +11,13 @@
     margin-block-start: 10px;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 30px;
     justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
