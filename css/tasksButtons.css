@@ -1,4 +1,4 @@
-.hidden__buttons {
+.tasks__buttons {
 border: none;
 display: flex;
 align-items: center;
@@ -7,6 +7,10 @@ color: hsl(180, 100%, 25%);
 transition: 1s;
 }
 
-.hidden__buttons:hover {
+.tasks__buttons:hover {
 color: hsl(180, 100%, 35%);
+}
+
+.tasks__buttons--hide {
+    display: none;
 }
