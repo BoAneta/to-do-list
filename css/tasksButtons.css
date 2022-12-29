@@ -1,14 +1,22 @@
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .tasks__buttons {
-border: none;
-display: flex;
-align-items: center;
-background-color: white;
-color: hsl(180, 100%, 25%);
-transition: 1s;
+    border: none;
+    background-color: transparent;
+    margin: 0 0 0 15px;
+    color: #008080;
+    transition: color 1s;
 }
 
 .tasks__buttons:hover {
-color: hsl(180, 100%, 35%);
+    color: #03d3d3;
+}
+
+.tasks__buttons:disabled {
+    color: #ccc;
 }
 
 .tasks__buttons--hide {

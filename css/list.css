@@ -11,27 +11,28 @@
     gap: 10px;
     padding: 10px;
     margin: 0 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .taskList__button {
     width: 30px;
     height: 30px;
-    background-color: green;
+    background-color: #008000;
     border-style: none;
 }
 
 .taskList__button--remove {
-    background-color: rgb(214, 12, 12);
-    color: white;
+    background-color: #d60c0c;
+    color: #ffffff;
 }
 
 .taskList__button--remove:hover {
-    background-color: rgb(175, 25, 25);
+    background-color: #f02f2f;
+    transition: 1s;
 }
 
 .taskList__button--remove:active {
-    background-color: rgb(214, 12, 12);
+    background-color: #ff3838;
 }
 
 .taskList__button--done {
@@ -39,11 +40,12 @@
 }
 
 .taskList__button--done:hover {
-    background-color: rgb(5, 94, 5);
+    background-color: #0ca70c;
+    transition: 1s;
 }
 
 .taskList__button--done:active {
-    background-color: green;
+    background-color: #25d125;
 }
 
 .task__content {

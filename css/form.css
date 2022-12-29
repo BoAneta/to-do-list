@@ -12,23 +12,23 @@
 }
 
 .form__button {
-    background-color: hsl(180, 100%, 25%);
-    color: white;
+    background-color: #008080;
+    color: #ffffff;
     padding: 10px;
     border: none;
     transition: 1s;
 }
 
 .form__button:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform: scale(1.2);
+    background-color: #009999;
+    transform: scale(1.1);
 }
 
 .form__button:active {
-    background-color: teal;
+    background-color: #008080;
 }
 
 .form__newTask {
     padding: 5px;
-    border: 2px solid #eee;
+    border: 2px solid #eeeeee;
 }
