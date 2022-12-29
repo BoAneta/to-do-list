@@ -1,6 +1,6 @@
 # To Do List
 
-This is my third project on FrontEnd Dev course with YouCode. It's a simply TO DO List where you can add a task, mark it as done or delete it.
+This is my third project on FrontEnd Dev course with YouCode. It's a simply TO DO List where you can add a task, mark it as done or delete it. You can also hide done tasks and mark all tasks as done.
 
 ## Demo
 
