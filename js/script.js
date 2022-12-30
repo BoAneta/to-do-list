@@ -50,10 +50,10 @@
     if (toggleHideDoneTasksButton) {
       toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
     }
-    
+
     const markAllTasksDoneButton = document.querySelector(".js-markAllTasksDone");
 
-    if( markAllTasksDoneButton) {
+    if (markAllTasksDoneButton) {
       markAllTasksDoneButton.addEventListener("click", markAllTasksDone);
     }
   };
@@ -90,7 +90,8 @@
     <button class="tasks__buttons js-toggleHideDoneTasks">
     ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
     </button>
-    <button class="tasks__buttons js-markAllTasksDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+    <button class="tasks__buttons js-markAllTasksDone" 
+    ${tasks.every(({ done }) => done) ? "disabled" : ""}>
     Ukończ wszystkie
     </button>
     `;
@@ -102,11 +103,15 @@
     for (const task of tasks) {
       htmlString += `
         <li 
-        class="taskList__item${task.done && hideDoneTasks ? " tasks__buttons--hide" : ""} js-taskList">
+        class="taskList__item
+        ${task.done && hideDoneTasks ? " tasks__buttons--hide" : ""} js-taskList">
         <button class="taskList__button taskList__button--done js-done">
-        ${task.done ? "✓" : ""}</button>
-        <span class="task__content${task.done ? " task__content--done" : ""
-        }">${task.content}</span>
+        ${task.done ? "✓" : ""}
+        </button>
+        <span class="task__content
+        ${task.done ? " task__content--done" : ""}">
+        ${task.content}
+        </span>
         <button class="taskList__button taskList__button--remove js-remove">🗑</button>
         </li>
         `;
