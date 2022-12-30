@@ -24,11 +24,11 @@
 .taskList__button--remove {
     background-color: #d60c0c;
     color: #ffffff;
+    transition: 1s;
 }
 
 .taskList__button--remove:hover {
     background-color: #f02f2f;
-    transition: 1s;
 }
 
 .taskList__button--remove:active {
@@ -37,11 +37,11 @@
 
 .taskList__button--done {
     color: #eee;
+    transition: 1s;
 }
 
 .taskList__button--done:hover {
     background-color: #0ca70c;
-    transition: 1s;
 }
 
 .taskList__button--done:active {
